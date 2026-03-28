@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>for my bby 💗</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,300;1,6..96,400;1,6..96,600&family=Great+Vibes&family=IM+Fell+English:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- EYE BLINK TRANSITION -->
+<div id="eyeBlink" class="eye-blink">
+    <img src="photos/photo%20%2832%29.jpeg" class="blink-eye-img" alt="">
+    <div class="blink-lid blink-top"></div>
+    <div class="blink-lid blink-bot"></div>
+</div>
+
+<!-- INTRO SCREEN -->
+<div id="introScreen" class="intro-screen">
+    <img src="photos/photo%20%2832%29.jpeg" alt="" class="intro-photo">
+    <div class="intro-veil"></div>
+    <div class="intro-words">
+        <p class="intro-main">stay here for a second…</p>
+        <p class="intro-sub">there's something waiting for you, made with all my heart 💗</p>
+    </div>
+    <p class="intro-tap">✦ &nbsp; tap anywhere to begin &nbsp; ✦</p>
+</div>
+
+<!-- global layers -->
+<div id="particleLayer" class="g-particles"></div>
+<div id="sparkleLayer"  class="g-sparkles"></div>
+<canvas id="confetti"></canvas>
+
+<!-- PAGE 1 · WELCOME -->
+<section id="p1" class="page">
+    <div class="p1-vignette"></div>
+    <div id="roseRain" class="rose-rain"></div>
+    <div class="p1-inner">
+        <p class="eyebrow">✦ &nbsp; made with more love than words can hold &nbsp; ✦</p>
+        <h1 id="mainTitle" class="hero-title">
+            <span class="title-main">hey my</span>
+            <span class="title-baby">baby 💗</span>
+        </h1>
+        <p class="hero-accent">are you ready for something i made only for you?</p>
+        <div class="hero-btns">
+            <button id="yesBtn" class="btn-yes">yes, show me 🥰</button>
+            <button id="noBtn"  class="btn-no">let me think 😶</button>
+        </div>
+        <p id="noMsg" class="no-msg" aria-live="polite"></p>
+    </div>
+</section>
+
+<!-- PAGE 2 · LOADING -->
+<section id="p2" class="page">
+    <div id="sakuraLayer" class="sakura-layer"></div>
+    <div class="load-wrap">
+        <div class="kitty-frame">
+            <img src="kitty.gif" alt="" class="kitty">
+            <div class="kitty-glow"></div>
+        </div>
+        <p class="load-line">
+            <span id="typeText"></span><span class="caret">|</span>
+        </p>
+        <div class="load-dots">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE 3 · COUNTDOWN -->
+<section id="p3" class="page">
+    <div id="starfield" class="starfield"></div>
+    <div class="cd-eye-bg"></div>
+    <div id="reelTop" class="cd-reel cd-reel-top"><div class="cd-reel-strip" id="reelTopStrip"></div></div>
+    <div id="reelBot" class="cd-reel cd-reel-bot"><div class="cd-reel-strip" id="reelBotStrip"></div></div>
+    <div class="cd-card">
+        <span class="cd-crown">👑</span>
+        <h2 class="cd-heading">oh, my princess ✨</h2>
+        <div class="cd-timer">
+            <div class="cd-unit"><b id="cd-d">00</b><span>Days</span></div>
+            <div class="cd-colon">:</div>
+            <div class="cd-unit"><b id="cd-h">00</b><span>Hours</span></div>
+            <div class="cd-colon">:</div>
+            <div class="cd-unit"><b id="cd-m">00</b><span>Mins</span></div>
+            <div class="cd-colon">:</div>
+            <div class="cd-unit cd-pulse"><b id="cd-s">00</b><span>Secs</span></div>
+        </div>
+        <p class="cd-caption">the day is coming when my favourite person came into this world 💗</p>
+        <button id="toBoard" class="btn-yes cd-btn">come see the little memories ✨</button>
+    </div>
+</section>
+
+<!-- PAGE 4 · CORKBOARD -->
+<section id="p4" class="page board-page">
+    <div id="petalLayer" class="petal-layer"></div>
+    <div id="lightsRow"  class="lights-row"></div>
+    <div id="bunting"    class="bunting"></div>
+    <div id="boardScene" class="board-scene"></div>
+    <button id="toPoem" class="nav-next-btn">read something i wrote for you ✦</button>
+</section>
+
+<!-- PAGE 5 · POEM -->
+<section id="p5" class="page poem-page">
+    <div class="parch-texture"></div>
+    <div class="parch-vignette"></div>
+    <div id="candleLayer" class="candle-layer"></div>
+    <div class="poem-scroll">
+        <div class="poem-card">
+            <div class="poem-flourish top-flourish">❧</div>
+            <p class="poem-label">✦ &nbsp; for you &nbsp; ✦</p>
+            <h2 class="poem-title">you have me, always</h2>
+            <div class="poem-divider">— ✦ —</div>
+            <div class="poem-body">
+                <p>there are some souls<br>that do not enter a life<br>as others do.</p>
+                <p>they do not merely arrive—<br>they are felt,<br>as dawn is felt by a sleepless sky,<br>as warmth is felt by cold hands,<br>as rain is felt by earth<br>that had been waiting quietly for mercy.</p>
+                <p>you feel like that to me.</p>
+                <p>not like something sudden,<br>not like something passing,<br>not like a lovely thing<br>meant only to be admired from afar—</p>
+                <p>but like tenderness itself<br>taking a shape i could love,<br>and calling it you.</p>
+                <p>and ever since,<br>my heart has not known<br>how to think of you<br>in any small way.</p>
+                <p>for you are not small to me.</p>
+                <p>you are the hush after heaviness.<br>the comfort after ache.<br>the softness that remains<br>when all the noise of the world<br>has wearied me beyond words.</p>
+                <p>you are my safest thought.<br>my gentlest undoing.<br>my favourite place to rest<br>without ever having to close my eyes.</p>
+                <p>and oh,<br>if only you knew<br>how beautifully you are held in me.</p>
+                <p>for it is not only your laughter<br>that i cherish—<br>though God knows<br>your laughter could make a sorrowing day<br>forget itself.</p>
+                <p>it is not only your sweetness<br>when you are light,<br>nor only your smile<br>when joy sits easily upon you.</p>
+                <p>it is all of you.</p>
+                <p>the happy girl.<br>the loving girl.<br>the overthinking girl.<br>the quiet girl.<br>the girl with tears gathering first<br>and words arriving later.<br>the little storm of you<br>when anger comes,<br>and yet even then<br>you remain somehow so unbearably dear<br>that my heart can do nothing<br>but soften.</p>
+                <p>there is not a single version of you<br>that i would turn away from.</p>
+                <p>bring me your chaos.<br>bring me your silence.<br>bring me your trembling moods,<br>your childish moods,<br>your clingy little heart,<br>your tired eyes,<br>your unspoken hurts,<br>your too-much thoughts,<br>your every scattered piece—</p>
+                <p>and i will still look at you<br>as though i have been trusted<br>with something precious beyond language.</p>
+                <p>because that is what you are.</p>
+                <p>precious<br>not in the fragile sense,<br>but in the sacred one.</p>
+                <p>not because you must be flawless<br>to be adored,<br>but because even your imperfect moments<br>seem touched by something<br>unusually lovely.</p>
+                <p>you do not have to come to me polished.<br>you do not have to arrive glowing.<br>you do not have to make yourself easier<br>for me to love you well.</p>
+                <p>come to me as you are.</p>
+                <p>come with your laughter falling everywhere.<br>come with your heart too full.<br>come with your anger.<br>come with your tears.<br>come with your need for comfort<br>you do not know how to ask for.<br>come like a child seeking warmth.<br>come like a tired soul seeking rest.</p>
+                <p>come,<br>and let this be the one thing<br>you never have to doubt:</p>
+                <p>you have me.</p>
+                <p>you have me<br>when the day is golden.<br>you have me<br>when the night has been unkind.<br>you have me<br>when you are easy to understand,<br>and when even you do not know<br>what your own heart is trying to say.<br>you have me<br>when you are all smiles and mischief,<br>and when you are quiet in that way<br>that makes me wish<br>i could wrap the whole world in softness<br>before it reaches you.</p>
+                <p>you have me<br>not in the way a thing is claimed,<br>but in the way a promise is given.</p>
+                <p>in the way shelter belongs to rain-tired wings.<br>in the way warmth belongs to winter hands.<br>in the way home belongs<br>to the weary heart<br>that has wandered enough.</p>
+                <p>that is how you have me.</p>
+                <p>completely.<br>gently.<br>without asking.</p>
+                <p>and if ever life grows cruel with you,<br>if ever the world feels too sharp,<br>if ever your own heart becomes<br>too heavy for you to carry alone—</p>
+                <p>come here.</p>
+                <p>come here with your breaking.<br>come here with your softness.<br>come here with the ache you hide so well.<br>come here with every version of yourself<br>the world has not known how to hold properly.</p>
+                <p>i will not ask you to be less.<br>i will not ask you to be quieter.<br>i will not ask you to smile first<br>before i make room for your sorrow.</p>
+                <p>i will simply open my arms in words<br>and let them become<br>the gentlest place i know<br>to keep you.</p>
+                <p>because if love has ever meant anything to me,<br>it has meant this:</p>
+                <p>to be a resting place<br>for the one who has become<br>dearer than rest itself.</p>
+                <p>and that is what you are.</p>
+                <p>my princess,<br>my comfort,<br>my better half of peace,<br>my sweetest heart-home,<br>my favourite person<br>in all her bright and breaking forms.</p>
+                <p>you are not loved by me<br>only in your best moments.</p>
+                <p>you are loved<br>in your truest ones.</p>
+                <p>in the moments you are laughing too hard.<br>in the moments you are on the verge of tears.<br>in the moments you are angry and adorable all at once.<br>in the moments you say nothing at all,<br>and still your silence reaches me<br>as though it has known my name forever.</p>
+                <p>you are loved there too.<br>especially there.</p>
+                <p>so let this be the vow<br>hidden inside every line:</p>
+                <p>you will never have to earn<br>the softness i give you.</p>
+                <p>you already own it.<br>you already live in it.<br>you already have a place in me<br>where no sorrow of yours<br>will ever be unwelcome.</p>
+                <p>you have me<br>like warmth has the flame.<br>like evening has its prayer.<br>like a flower has the patient light<br>that teaches it how to open.<br>like home has the door<br>that never minds being knocked upon twice.</p>
+                <p>you have me, always—<br>in the loveliest sense,<br>in the gentlest sense,<br>in the sense that says:</p>
+                <p>rest here.<br>be small here.<br>be loud here.<br>be fragile here.<br>be all that you are<br>and nothing less.</p>
+                <p>for i have never wished<br>to love only the easy parts of you.</p>
+                <p>i have wished only this—<br>to be the kind of love<br>that does not flinch.</p>
+                <p>the kind that stays.<br>the kind that soothes.<br>the kind that gathers your scattered pieces<br>and kisses them back into belonging,<br>not with lips,<br>but with devotion so tender<br>it begins to resemble grace.</p>
+                <p>and if one day<br>you forget everything else i have ever said,<br>then remember only this:</p>
+                <p>in every season of you,<br>in every ache,<br>in every smile,<br>in every storm,<br>in every soft and shining ruin of a day—</p>
+                <p>you have me.</p>
+                <p>as comfort.<br>as promise.<br>as refuge.<br>as the quiet hand<br>still reaching for yours<br>even after the whole world has gone to sleep.</p>
+                <p class="poem-sign">— your better half veduu, with so much of love</p>
+            </div>
+            <div class="poem-divider">— ✦ —</div>
+            <div class="poem-flourish bot-flourish">❧</div>
+        </div>
+        <button id="toNote" class="nav-next-btn poem-next-btn">one more thing for you ✦</button>
+    </div>
+</section>
+
+<!-- PAGE 6 · DAILY NOTE -->
+<section id="p6" class="page note-page">
+    <div class="note-bg-layer"></div>
+    <div class="note-scroll">
+        <div class="note-card">
+            <div class="note-wax">💌</div>
+            <p class="note-eyebrow">✦ &nbsp; a note from vedu &nbsp; ✦</p>
+            <p id="noteDate" class="note-date"></p>
+            <div class="note-divider"></div>
+            <div id="noteBody" class="note-body"></div>
+            <div class="note-divider"></div>
+            <p class="note-sign">yours, always 💗</p>
+        </div>
+        <p class="note-footer">written softly, meant honestly 🌹</p>
+        <button id="toMuseumIntro" class="nav-next-btn note-museum-btn">one last room remains ✦</button>
+    </div>
+</section>
+
+<!-- PAGE 7 · MUSEUM TRANSITION -->
+<section id="p7" class="page museum-transition-page">
+    <div class="museum-transition-bloom"></div>
+    <div class="museum-transition-floor"></div>
+    <div class="museum-transition-wrap">
+        <div class="museum-transition-orbit orbit-a"></div>
+        <div class="museum-transition-orbit orbit-b"></div>
+        <div class="museum-transition-spark spark-a"></div>
+        <div class="museum-transition-spark spark-b"></div>
+        <p class="museum-transition-line line-1">if gratitude could become a place, it would begin here</p>
+        <p class="museum-transition-line line-2">there was still one part of my heart this website had not shown you yet</p>
+    </div>
+</section>
+
+<!-- PAGE 8 · MUSEUM DOOR -->
+<section id="p8" class="page museum-door-page">
+    <div class="museum-door-glow"></div>
+    <div class="museum-door-floor"></div>
+    <div class="museum-door-arch"></div>
+    <div class="museum-door-pilaster left"></div>
+    <div class="museum-door-pilaster right"></div>
+    <div class="museum-door-dais"></div>
+
+    <div class="museum-door-wrap">
+        <p class="museum-door-over">what you never knew you gave me</p>
+
+        <button id="museumDoor" class="museum-door" aria-label="Enter the museum">
+            <span class="door-aura"></span>
+            <span class="door-frame"></span>
+            <span class="door-center-glow"></span>
+            <span class="door-panel left"></span>
+            <span class="door-panel right"></span>
+            <span class="door-seam"></span>
+            <span class="door-handle left"></span>
+            <span class="door-handle right"></span>
+            <span class="door-threshold-light"></span>
+        </button>
+
+        <p class="museum-door-under">enter softly</p>
+    </div>
+
+    <audio id="doorOpenAudio" src="audio/door-open.mp3" preload="auto"></audio>
+</section>
+
+<!-- PAGE 9 · MEMORY HALLWAY -->
+<section id="p9" class="page museum-hall-page">
+    <div class="museum-hall">
+        <div class="museum-hall-camera">
+            <div class="museum-hall-world">
+                <div class="museum-hall-ceiling"></div>
+                <div class="museum-hall-left-wall"></div>
+                <div class="museum-hall-right-wall"></div>
+                <div class="museum-hall-floor"></div>
+                <div class="museum-hall-runner"></div>
+                <div class="museum-hall-depth"></div>
+                <div class="museum-hall-end-arch"></div>
+                <div class="museum-hall-endlight"></div>
+                <div class="museum-hall-shine"></div>
+                <div id="hallFrames" class="hall-frames"></div>
+            </div>
+        </div>
+        <p class="hall-whisper">every frame here carries a thank you</p>
+    </div>
+</section>
+
+<!-- PAGE 10 · GRATITUDE MUSEUM -->
+<section id="p10" class="page museum-page">
+    <div class="museum-bg"></div>
+    <div class="museum-vignette"></div>
+    <div class="museum-aurora"></div>
+    <div class="museum-top-light"></div>
+
+    <div class="museum-wrap">
+        <div class="museum-chamber-shell">
+            <div class="museum-chamber-spotlight left"></div>
+            <div class="museum-chamber-spotlight right"></div>
+            <div class="museum-side-plaque left"><span>gratitude gallery</span></div>
+            <div class="museum-side-plaque right"><span>final chamber</span></div>
+            <div class="museum-hero">
+                <div class="museum-hero-glow"></div>
+                <p class="museum-kicker">✦ &nbsp; hidden final wing &nbsp; ✦</p>
+                <h2 class="museum-title">what you never knew you gave me</h2>
+                <p class="museum-subtitle">a museum of the beautiful things your presence left in my life</p>
+                <p class="museum-small">some feelings were too large to stay inside one note</p>
+            </div>
+        </div>
+
+        <div class="museum-gallery-shell">
+            <div class="museum-gallery-arch"></div>
+            <div class="museum-gallery-floor-glow"></div>
+            <div id="museumExhibits" class="museum-exhibits"></div>
+        </div>
+
+        <div class="museum-closing">
+            <div class="museum-closing-photo">
+                <img src="photo%20%2863%29.jpeg" alt="">
+            </div>
+            <p class="museum-closing-line">some people leave memories.<br>you left meaning.</p>
+            <p class="museum-closing-sign">with all the gratitude my heart could hold ✦</p>
+        </div>
+    </div>
+</section>
+
+<!-- LETTER MODAL -->
+<div id="modal" class="modal" onclick="if(event.target===this)closeLetter()">
+    <div class="modal-paper">
+        <button class="modal-x" onclick="closeLetter()">✕</button>
+        <p class="modal-roses">🌹 &nbsp; 🌹</p>
+        <p class="modal-orn">✦ &nbsp; ✦ &nbsp; ✦</p>
+        <p class="letter-p">If you could borrow my eyes for even a moment, you would see what I see so easily — a kind of beauty no mirror has ever fully held. You are not just beautiful... you are the kind of breath-stealing, heart-softening beauty that refuses to fit into ordinary words.</p>
+        <p class="letter-p">And yet, the real brilliance in you — the extra light that makes you unlike anyone else — is your soul. The quiet kindness you carry, the purity in your heart, the way your love feels gentle and human and warm... that is what makes you the most admirable person I have ever known.</p>
+        <p class="letter-p">To admire you is effortless, because you are stunning in every way a person can be, but even the sweetest compliments feel too small for you. Your beauty isn't only in your face or your figure, though both could stop the world for a second... it's in the depth of your soul, the goodness you breathe into every moment, the softness only I am lucky enough to feel this closely.</p>
+        <p class="letter-p letter-final">And bby, no one — not in this lifetime or any other — could ever hold you in quite the same place my heart does. 💗</p>
+        <p class="modal-orn">✦ &nbsp; ✦ &nbsp; ✦</p>
+        <p class="modal-sign">with all my heart 💌</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
